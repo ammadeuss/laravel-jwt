@@ -1,0 +1,23 @@
+{
+    "name": "ammadeuss/laravel-jwt",
+    "description": "Laravel wrapper for the lcobucci/jwt package",
+    "keywords": [
+        "jwt web token",
+        "laravel"
+    ],
+    "require": {
+        "lcobucci/jwt": "^3.2.1",
+        "illuminate/support": "5.4.*"
+    },
+    "homepage": "https://github.com/ammadeuss/laravel-jwt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammadeuss Raducan",
+            "email": "raducan@ammadeuss.ro"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Ammadeuss\\LaravelJwt\\": "" }
+    }
+}
