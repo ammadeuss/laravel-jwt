@@ -53,11 +53,11 @@ class Jwt
     public function sign($signer = NULL)
     {
         if ($signer === NULL) {
-            $signer = new \Lcobucci\JWT\Signer\Hmac\Sha256;
             $key = config('app.key');
-        } elseif (is_string($signer)) {
             $signer = new \Lcobucci\JWT\Signer\Hmac\Sha256;
+        } elseif (is_string($signer)) {
             $key = $signer;
+            $signer = new \Lcobucci\JWT\Signer\Hmac\Sha256;
         } elseif (is_array($signer) && isset($signer['key'])) {
             $key = $signer['key'];
         }
